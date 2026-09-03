@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Jest",
+			"path": "Jest"
+		},
+		{
+			"name": "src",
+			"path": "../../../../../Downloads/package-lock/src"
+		}
+	],
+	"settings": {}
+}
