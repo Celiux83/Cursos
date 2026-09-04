@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/30</span>
+                <span class='fraction'>20/30</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">35.29% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/17</span>
+                <span class='fraction'>6/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>6/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">37.5% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/24</span>
+                <span class='fraction'>18/24</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -110,6 +110,29 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -117,58 +140,35 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Cart, CartItem, Coupon } from './types';
 &nbsp;
 export const FREE_SHIPPING_THRESHOLD = 50;
 export const FLAT_SHIPPING_COST = 4.99;
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >roundMoney(</span>value: number): number {
-<span class="cstat-no" title="statement not covered" >  return Math.round((value + Number.EPSILON) * 100) / 100;</span>
+export function roundMoney(value: number): number {
+  return Math.round((value + Number.EPSILON) * 100) / 100;
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >lineTotal(</span>item: CartItem): number {
-<span class="cstat-no" title="statement not covered" >  if (item.quantity &lt; 0) {</span>
+export function lineTotal(item: CartItem): number {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (item.quantity &lt; 0) {
 <span class="cstat-no" title="statement not covered" >    throw new Error('Quantity cannot be negative');</span>
   }
-<span class="cstat-no" title="statement not covered" >  return roundMoney(item.unitPrice * item.quantity);</span>
+  return roundMoney(item.unitPrice * item.quantity);
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >calculateSubtotal(</span>cart: Cart): number {
-<span class="cstat-no" title="statement not covered" >  return roundMoney(cart.items.reduce(<span class="fstat-no" title="function not covered" >(s</span>um, item) =&gt; <span class="cstat-no" title="statement not covered" >sum + lineTotal(item),</span> 0));</span>
+export function calculateSubtotal(cart: Cart): number {
+  return roundMoney(cart.items.reduce((sum, item) =&gt; sum + lineTotal(item), 0));
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >calculateShipping(</span>subtotal: number, isPremium = <span class="branch-0 cbranch-no" title="branch not covered" >false)</span>: number {
-<span class="cstat-no" title="statement not covered" >  if (isPremium) <span class="cstat-no" title="statement not covered" >return 0;</span></span>
-<span class="cstat-no" title="statement not covered" >  if (subtotal &lt;= 0) <span class="cstat-no" title="statement not covered" >return 0;</span></span>
-<span class="cstat-no" title="statement not covered" >  return subtotal &gt;= FREE_SHIPPING_THRESHOLD ? 0 : FLAT_SHIPPING_COST;</span>
+export function calculateShipping(subtotal: number, isPremium = false): number {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (isPremium) <span class="cstat-no" title="statement not covered" >return 0;</span>
+  if (subtotal &lt;= 0) return 0;
+  return subtotal &gt;= FREE_SHIPPING_THRESHOLD ? 0 : <span class="branch-1 cbranch-no" title="branch not covered" >FLAT_SHIPPING_COST;</span>
 }
 &nbsp;
 export function <span class="fstat-no" title="function not covered" >isCouponValid(</span>coupon: Coupon, subtotal: number, now: Date): boolean {
@@ -182,9 +182,9 @@ export function <span class="fstat-no" title="function not covered" >applyCoupon
 <span class="cstat-no" title="statement not covered" >  return roundMoney((subtotal * coupon.percentOff) / 100);</span>
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >calculateTotal(</span>subtotal: number, discount: number, shipping: number): number {
-  const total = <span class="cstat-no" title="statement not covered" >subtotal - discount + shipping;</span>
-<span class="cstat-no" title="statement not covered" >  return roundMoney(Math.max(total, 0));</span>
+export function calculateTotal(subtotal: number, discount: number, shipping: number): number {
+  const total = subtotal - discount + shipping;
+  return roundMoney(Math.max(total, 0));
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -193,7 +193,7 @@ export function <span class="fstat-no" title="function not covered" >calculateTo
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-09-03T22:38:08.132Z
+                at 2026-09-03T23:08:01.277Z
             </div>
         <script src="../prettify.js"></script>
         <script>
